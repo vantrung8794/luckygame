@@ -1,0 +1,16 @@
+PODS:
+  - DTPhotoViewerController (3.1.0)
+
+DEPENDENCIES:
+  - DTPhotoViewerController
+
+SPEC REPOS:
+  trunk:
+    - DTPhotoViewerController
+
+SPEC CHECKSUMS:
+  DTPhotoViewerController: 2b5e64792ee89fcab1f154538577d1856e04e15b
+
+PODFILE CHECKSUM: 721d65b489f89e38de111bdcc25442d3804980eb
+
+COCOAPODS: 1.8.1

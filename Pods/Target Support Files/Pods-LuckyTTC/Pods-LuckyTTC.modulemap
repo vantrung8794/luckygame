@@ -1,0 +1,6 @@
+framework module Pods_LuckyTTC {
+  umbrella header "Pods-LuckyTTC-umbrella.h"
+
+  export *
+  module * { export * }
+}
