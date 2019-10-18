@@ -95,7 +95,8 @@ class StartViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 var lstPerson = Constant.getLstPerson()
                 let timeTamp: String = "\(Date.currentTimeStamp)"
                 lstPerson.append(PersonBO(name: guessName, timeTamp: timeTamp , image: selectedImage))
-                _ = Constant.saveImage(image: selectedImage, name: timeTamp)
+                let saveImage = Constant.resize(image: selectedImage, maxHeight: 600, maxWidth: 600) ?? UIImage()
+                _ = Constant.saveImage(image: saveImage, name: timeTamp)
                 Constant.saveLstPerson(lstPerson)
             }, didCancel: nil).show()
         }

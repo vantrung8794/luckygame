@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var widthOfCollectionview: NSLayoutConstraint!
     
     @IBOutlet weak var btnBack: UIButton!
-    let banerPerson = PersonBO(name: "Chúc mừng ngày 20/10", timeTamp: "banner", image: UIImage(named: "img_baner") ?? UIImage())
+    let banerPerson = PersonBO(name: "Chúc mừng ngày 20/10", timeTamp: "banner", image: Constant.resize(image: UIImage(named: "img_baner") ?? UIImage(), maxHeight: 600, maxWidth: 600) ?? UIImage())
     let lstSpeedEnd = [0.1, 0.2, 0.3, 0.4, 0.5, 1.0, 1.4, 1.8, 2.1, 2.3] // 3 -> 0.5
     let lstSpeedStart = [0.1, 0.2, 0.4, 0.6, 0.8] // 1.5 -> 0.5
     var lstOriginImages = [PersonBO]()
