@@ -3,17 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		25D378EF17D21CBAD50CD42D /* Pods_LuckyTTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B8D35BD5EB73F77863D16D /* Pods_LuckyTTC.framework */; };
+		D8DEDD7C235965E1009B3FE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEDD7B235965E1009B3FE2 /* ViewController.swift */; };
 		D8EB13D723582663002CFF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB13D623582663002CFF75 /* AppDelegate.swift */; };
 		D8EB13DC23582663002CFF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EB13DA23582663002CFF75 /* Main.storyboard */; };
 		D8EB13DE23582664002CFF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8EB13DD23582664002CFF75 /* Assets.xcassets */; };
 		D8EB13E123582664002CFF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EB13DF23582664002CFF75 /* LaunchScreen.storyboard */; };
 		D8EB13EA2358269D002CFF75 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB13E92358269D002CFF75 /* Constant.swift */; };
-		D8EB13ED235826A3002CFF75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB13EB235826A3002CFF75 /* ViewController.swift */; };
 		D8EB13EE235826A3002CFF75 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB13EC235826A3002CFF75 /* StartViewController.swift */; };
 		D8EB13F1235826B8002CFF75 /* PersonBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EB13F0235826B8002CFF75 /* PersonBO.swift */; };
 		D8EB13F7235826C6002CFF75 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8EB13F3235826C6002CFF75 /* MainCollectionViewCell.xib */; };
@@ -28,6 +28,7 @@
 /* Begin PBXFileReference section */
 		04F07D379A2752573F964DE1 /* Pods-LuckyTTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyTTC.release.xcconfig"; path = "Target Support Files/Pods-LuckyTTC/Pods-LuckyTTC.release.xcconfig"; sourceTree = "<group>"; };
 		70B8D35BD5EB73F77863D16D /* Pods_LuckyTTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyTTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8DEDD7B235965E1009B3FE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8EB13D323582663002CFF75 /* LuckyTTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyTTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EB13D623582663002CFF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8EB13DB23582663002CFF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		D8EB13E023582664002CFF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8EB13E223582664002CFF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8EB13E92358269D002CFF75 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		D8EB13EB235826A3002CFF75 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../RandomFace/RandomFace/ViewController.swift; sourceTree = "<group>"; };
 		D8EB13EC235826A3002CFF75 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		D8EB13F0235826B8002CFF75 /* PersonBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonBO.swift; sourceTree = "<group>"; };
 		D8EB13F3235826C6002CFF75 /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -74,7 +74,6 @@
 				FD4367705F65614B4F6144E4 /* Pods-LuckyTTC.debug.xcconfig */,
 				04F07D379A2752573F964DE1 /* Pods-LuckyTTC.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,13 +102,13 @@
 				D8EB13F2235826BE002CFF75 /* Elements */,
 				D8EB13EF235826AD002CFF75 /* Data */,
 				D8EB13EC235826A3002CFF75 /* StartViewController.swift */,
-				D8EB13EB235826A3002CFF75 /* ViewController.swift */,
 				D8EB13E823582697002CFF75 /* Commons */,
 				D8EB13D623582663002CFF75 /* AppDelegate.swift */,
 				D8EB13DA23582663002CFF75 /* Main.storyboard */,
 				D8EB13DD23582664002CFF75 /* Assets.xcassets */,
 				D8EB13DF23582664002CFF75 /* LaunchScreen.storyboard */,
 				D8EB13E223582664002CFF75 /* Info.plist */,
+				D8DEDD7B235965E1009B3FE2 /* ViewController.swift */,
 			);
 			path = LuckyTTC;
 			sourceTree = "<group>";
@@ -280,8 +279,8 @@
 				D8EB13F8235826C6002CFF75 /* MainCollectionViewCell.swift in Sources */,
 				D8EB13EE235826A3002CFF75 /* StartViewController.swift in Sources */,
 				D8EB13FA235826C6002CFF75 /* WinersCell.swift in Sources */,
+				D8DEDD7C235965E1009B3FE2 /* ViewController.swift in Sources */,
 				D8EB13D723582663002CFF75 /* AppDelegate.swift in Sources */,
-				D8EB13ED235826A3002CFF75 /* ViewController.swift in Sources */,
 				D8F6336F235839E100047A14 /* TAlertView.swift in Sources */,
 				D8EB13FD235826D5002CFF75 /* UIViewExtension.swift in Sources */,
 				D8EB13EA2358269D002CFF75 /* Constant.swift in Sources */,
