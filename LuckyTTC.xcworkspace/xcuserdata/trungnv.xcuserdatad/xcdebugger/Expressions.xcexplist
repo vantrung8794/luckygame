@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #2 in ViewController.scrollTo(currentIndex:maxIndex:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.lstCloneImages[currentIndex]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.scrollTo(currentIndex:maxIndex:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "maxIndex - currentIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.startAction(_:):ViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

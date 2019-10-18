@@ -24,19 +24,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lLY-1y-DIJ">
                                 <rect key="frame" x="298" y="313" width="300" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEG-fj-0bE">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="60"/>
-                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
-                                        <state key="normal" title="Chụp ảnh">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="takePhotoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jnc-oz-h1C"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUC-mo-fRu">
-                                        <rect key="frame" x="155" y="0.0" width="145" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
                                         <state key="normal" title="Chơi">
@@ -44,6 +33,17 @@
                                         </state>
                                         <connections>
                                             <segue destination="6wm-dB-DT7" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="1Pf-Na-63b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEG-fj-0bE">
+                                        <rect key="frame" x="155" y="0.0" width="145" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
+                                        <state key="normal" title="Chụp ảnh">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takePhotoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jnc-oz-h1C"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -222,12 +222,13 @@
                         <viewLayoutGuide key="safeArea" id="hMc-Jr-Uak"/>
                     </view>
                     <connections>
+                        <outlet property="btnBack" destination="sCh-15-xh1" id="ztA-EQ-7SG"/>
                         <outlet property="btnStart" destination="ruW-Rp-bFz" id="Fuo-CS-BmL"/>
                         <outlet property="lblNumberOfWinner" destination="HWH-rC-iwi" id="bVm-VA-sFY"/>
                         <outlet property="listWinnerView" destination="ZKh-0I-Dud" id="4WX-CM-ma9"/>
                         <outlet property="mainCollectionView" destination="Iuq-8k-uXx" id="5Tg-lo-bUy"/>
                         <outlet property="scrollView" destination="6oe-i8-Fr9" id="Oyz-s1-yqm"/>
-                        <outlet property="widthOfCollectionview" destination="AKS-wW-0nz" id="03B-Wz-eQp"/>
+                        <outlet property="widthOfCollectionview" destination="AKS-wW-0nz" id="Zfo-VH-Sua"/>
                         <outlet property="winnerTableView" destination="99E-Sq-9Oc" id="h6o-hk-lDT"/>
                     </connections>
                 </viewController>

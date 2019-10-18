@@ -32,7 +32,13 @@ class StartViewController: UIViewController, UIImagePickerControllerDelegate, UI
     //Mark: - Actions
     
     @IBAction func clearAllData(_ sender: Any) {
-        Constant.saveLstPerson([PersonBO]())
+        // show alert to enter the name of guess
+        TAlertView(alertTitle: "TTC Solutions", sub: nil, alertMainText: "Xác nhận xoá Data?", haveCancel: true, didAccept: { name in
+            if name.uppercased() == "TTC"{
+                  Constant.saveLstPerson([PersonBO]())
+            }
+        }, didCancel: nil).show()
+      
     }
     
     @IBAction func takePhotoAction(_ sender: Any) {

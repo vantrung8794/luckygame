@@ -73,19 +73,8 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v3z-Ch-PqF">
                                     <rect key="frame" x="0.0" y="138" width="290" height="30"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enR-4A-Jbb">
-                                            <rect key="frame" x="0.0" y="0.0" width="141" height="30"/>
-                                            <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                            <state key="normal" title="Đồng ý">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="acceptAction:" destination="-1" eventType="touchUpInside" id="Axw-s1-btC"/>
-                                            </connections>
-                                        </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-H7-d5S">
-                                            <rect key="frame" x="149" y="0.0" width="141" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="141" height="30"/>
                                             <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                             <state key="normal" title="Huỷ">
@@ -93,6 +82,17 @@
                                             </state>
                                             <connections>
                                                 <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="6se-dz-cug"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enR-4A-Jbb">
+                                            <rect key="frame" x="149" y="0.0" width="141" height="30"/>
+                                            <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <state key="normal" title="Đồng ý">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="acceptAction:" destination="-1" eventType="touchUpInside" id="Axw-s1-btC"/>
                                             </connections>
                                         </button>
                                     </subviews>
